@@ -76,7 +76,7 @@ def test_gpt2_classifier():
     print(f"Sentiment: {result}")
 
 if __name__ == "__main__":
-    # preprocess_the_data()
+    preprocess_the_data()
     # train_logistic_regression() 
     # train_lstm_model() 
-    test_gpt2_classifier()
+    # test_gpt2_classifier()

@@ -8,7 +8,8 @@ from src.utils.preprocessing import clean_text
 
 
 def preprocess_data():
-    df = pd.read_csv('data\ActualData\IMDB Dataset.csv')
+    os.makedirs("data/PreprocessedData", exist_ok=True)
+    df = pd.read_csv('data/ActualData/IMDB Dataset.csv')
     print(df.head())
     df['processed_review'] = df['review'].apply(clean_text)
     df = df[['processed_review', 'sentiment']]

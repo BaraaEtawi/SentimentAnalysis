@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import pickle
@@ -78,6 +79,7 @@ def train_lstm_model(use_preprocessed=True):
     metrics = evaluate(y_test, y_pred)
 
     #save the model and tokenizer
+    os.makedirs("models", exist_ok=True)
     suffix = "preprocessed" if use_preprocessed else "raw"
     model.save(f"models/lstm_model_{suffix}.h5")
     with open(f"models/lstm_tokenizer_{suffix}.pkl", "wb") as f:
