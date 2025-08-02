@@ -1,0 +1,11 @@
+tensorflow==2.13.0
+keras==2.13.1
+torch==2.1.0
+transformers==4.35.0
+pandas
+numpy==1.24.3
+scikit-learn
+nltk
+beautifulsoup4
+gast==0.4.0
+protobuf==4.25.8
