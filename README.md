@@ -11,7 +11,8 @@ A comprehensive sentiment analysis system that uses multiple machine learning ap
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.11.9
+- pip 25.2
 - All dependencies listed in `requirements.txt`
 - Ypu need to download the dataset into \data\ActualData\ path, before run the main.
 
