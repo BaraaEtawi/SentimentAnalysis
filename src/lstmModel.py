@@ -10,7 +10,7 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
 
-# Constants
+
 MAX_NUM_WORDS = 15000
 MAX_SEQUENCE_LENGTH = 200
 EMBEDDING_DIM = 128
@@ -32,7 +32,6 @@ def build_lstm_model(vocab_size):
     return model
 
 def evaluate(y_true, y_pred):
-    
     tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
     accuracy = (tp + tn) / (tp + tn + fp + fn)
     fpr = fp / (fp + tn)
